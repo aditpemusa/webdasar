@@ -20,8 +20,10 @@
     height: 100px;
 }
 
-.main {
+main {
     padding: 20px;
+    overflow: auto;
+    
 }
 
 
@@ -44,10 +46,14 @@ body {
     padding: 0;
 }
 
-
+header {         /* Untuk membuat navigasi header diam ketika di scroll*/
+    display: inline;
+}
 nav{
     background-color:#00a2c6;
     padding: 5px;
+    position: sticky;  /* Untuk membuat navigasi header diam ketika di scroll*/
+    top: 0;            /* Untuk membuat navigasi header diam ketika di scroll*/
 }
 nav a {
 	font-size: 18 px;
@@ -80,7 +86,14 @@ h3 {
 }
 
 .profile header {
-	text-align: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 5px;
+    mar
+    
+
+    
 }
 
 body {
@@ -99,5 +112,26 @@ footer p{       /* PEMBERIAN WARNA PADA FONT*/
 }
 
 #content {
-  float: left;
+    float:left;
+    width: 75%;
+}
+
+aside {
+    float:right;
+    width:25%;
+    padding-left: 20px;
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1000px) {
+    #content,
+    aside {
+        width:100%;
+        padding:0;
+    }
 }
