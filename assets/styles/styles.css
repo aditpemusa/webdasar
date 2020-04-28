@@ -98,4 +98,6 @@ footer p{       /* PEMBERIAN WARNA PADA FONT*/
     color: ivory;
 }
 
-
+#content {
+  float: left;
+}
