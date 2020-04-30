@@ -1,48 +1,78 @@
 <!DOCTYPE html>
 <head>
     <Title>Belajar HTML 5</Title>
+    <style>
+       .container {
+           display: flex;
+           flex-direction: column;
+ 
+           /* properti lainnya */
+           width: 800px;
+           height: 300px;
+           padding: 20px;
+           margin: 0 auto;
+           border: 2px solid black;
+           border-radius: 10px;
+           background-color: #11C5C6;
+       }
+        
+        .flex-row {
+           display: flex;
+           flex-direction: row;
+           flex-grow: 1;
+ 
+           /* properti lainnya */
+           padding: 20px;
+           margin: 5px;
+           background-color: #FBDD1C;
+           border: 2px solid black;
+           border-radius: 10px;
+       }
+ 
+       .box {
+           
+ 
+           /* properti lainnya */
+           margin: 5px;
+           border: 2px solid black;
+           border-radius: 10px;
+           background-color: #fe899a;
+       }
+
+       .first {
+           flex-grow: 3;
+       }
+       .second {
+           flex-grow: 2;
+       }
+ 
+       .third {
+           flex-grow: 1;
+       }
+       
+    </style>
 </head>
 
-<article>
-    <section>
-    <h2>Sejarah</h2>
-    <img src="assets/image/history.jpg">
-    <p>Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava
-        Gunung Tangkuban Parahu yang lalu membentuk telaga...</p>
-    </section>
- </article>
+<body>
+
+<div class="container">
+    <div class="flex-row">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+
+    <div class="flex-row">
+        <div class="box first"></div>
+        <div class="box second"></div>
+        <div class="box third"></div>
+    </div>
+</div>
 
 
- <article>
-     <section>
-    <h2>Geografis</h2>
-    <img src="assets/image/geografis.jpg">
-    <p>Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah mangkok
-        raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat..</p>
-    </section>
-     </article>
+</body>
 
- <article>
-     <section>
-    <h2>Wisata</h2>
-    <img src="assets/image/farm-house.jpg">
-    <p>Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan
-        akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya...</p>
-    </section>
- </article>
 
- <article>
-    <header>
-        <h1>Judul Artikel</h1>
-        <h2>Oleh: Dicoding Indonesia</h2>
-    </header>
-    <p>....... Konten artikel dimulai dari sini ......</p>
-    <footer>
-        <p>Bagikan artikel ini melalui</p>
-        <ul>
-            <li>Twitter</li>
-            <li>Facebook</li>
-            <li>......</li>
-        </ul>
-    </footer>
- </article>
+
+
+ 
